@@ -1,0 +1,37 @@
+{
+  "name": "github-repo-audit-agent",
+  "version": "1.0.0",
+  "description": "An agent that audits GitHub repositories for a specific profile, tracks advancement and active success metrics",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "audit": "node src/cli.js",
+    "lint": "eslint src/"
+  },
+  "keywords": [
+    "github",
+    "audit",
+    "agent",
+    "metrics",
+    "repositories",
+    "advancement",
+    "success"
+  ],
+  "author": "Anurag1",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^19.0.0",
+    "dotenv": "^16.0.0",
+    "axios": "^1.4.0",
+    "moment": "^2.29.0",
+    "chalk": "^4.1.2",
+    "table": "^6.8.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "nodemon": "^3.0.0",
+    "eslint": "^8.0.0"
+  }
+}
